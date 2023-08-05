@@ -1,0 +1,19 @@
+@use "../global" as *;
+
+.banner-section {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  text-align: center;
+  
+  img{    
+    height: 550px;
+    width: 100%;
+    object-fit: cover;
+    
+    @media (max-width: 800px) {
+      height: 350px;
+    }
+  }
+
+}

@@ -1,0 +1,147 @@
+@use "../global" as *;
+
+.featured {
+  background-color: #ffffff;
+    margin-top: 5.3rem;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position-x: left;
+    background-position-y: 30%;
+
+    @media (max-width: 800px) {
+      background-image: none;
+    }
+}
+
+
+
+.finally-sec
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+
+  @media(max-width: 768px) {
+   flex-wrap: wrap;
+  }
+
+
+  &-image{
+    width: 50%;
+    @media(max-width: 768px) {
+      
+        flex: 0 0 100%;
+        order: 1;
+      }
+
+    img{
+      width: 100%;  
+      padding: 0rem 5rem;
+      height: 450px;
+      object-fit: cover;
+
+      @media(max-width: 768px) {
+        height: 100%;
+        padding: 0rem 0rem;
+      }
+      
+    } 
+  }
+
+  &-text{
+        padding: 0 2.5rem;
+        width: 50%;
+        margin-top: 3rem;
+
+        @media(max-width: 768px) {
+          flex: 0 0 100%;
+          order: 2;
+        }
+
+
+        h2{
+          font-size: 3rem;
+          color: $text-primary;
+          margin-bottom: 3rem;
+
+        }
+
+        em{
+          font-size: 1.75rem;
+          line-height: 1.7;
+                }
+  }
+
+
+
+  &__name {
+    display: flex;
+    margin-top: 3rem;
+
+    &__profile {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+
+      &-pic {
+        width: 7rem;
+        height: 7rem;
+        border-radius: 50%;
+      }
+
+      span{
+        img{
+          width: 18rem;
+        }
+
+        p {
+          font-size: $p-size;
+          font-family: $text-font;
+          font-weight: 400;
+          top: -11px;
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+
+.featured-container {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    color: $text-black;
+    
+    h4 {
+      font-size: 1.6rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      margin-bottom: 1rem;
+    }
+  }
+
+
+  &__section {
+    margin: 1rem;
+    
+    @media (max-width: 800px) {
+      padding: 0 ;
+      margin: 2rem 1rem;
+
+    }
+
+    &__boxes {
+      text-align: center;
+
+      img{
+        width:100px;
+        margin: 0 10px;
+      }
+    }
+  }
+}

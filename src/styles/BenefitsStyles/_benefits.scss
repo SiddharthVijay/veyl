@@ -1,0 +1,124 @@
+@use "../global" as *;
+
+.benefits-section {
+  background-color: #1e1a61;
+  padding: 5.3rem 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: 20%;
+  
+  @media (max-width: 800px) {
+    background-image: none;
+  }
+
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+
+  .icon {
+    font-size: 2.2rem;
+    background-position: center;
+    background-size: cover;
+    transition: linear .2s; 
+    color: #fff;
+    background-color: #ff7748;
+    border-radius:100%;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    padding: 1.2rem 1.8rem;
+
+    &:hover{
+      color: #e1e1e1;
+      background-color: #3d3d3d;
+    }
+
+    &:hover + p{
+      visibility: visible;
+    }
+  }
+
+  &__title {
+    margin: 0 auto;
+    text-align: center;
+    color: $text-black;
+    width: 60%;
+    padding: 0 0 1rem 0;
+    border-bottom: 1px solid #f48090;
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.3rem;
+      color:#f48090;
+      letter-spacing: 1px;
+    }
+
+    h2 {
+      padding: 1rem 0;
+      font-size: 3rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      color:#fff;
+    }
+
+    p{
+      font-size: 1.4rem;
+      color: #fff;
+      line-height: 1.8;
+    }
+    
+    button{
+      background: none;
+      all: unset;
+      color: white;
+      font-size: $p-size;
+      cursor: pointer;
+      margin: 3rem 0;
+    }
+  }
+
+  &__boxes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    margin-top: 6rem;
+    padding: 0 2.5rem;
+
+    @media (max-width: 1021px) {
+      grid-template-columns: 1fr 1fr ;
+      row-gap: 2rem;
+    }
+
+    @media (max-width: 800px) {
+      grid-template-columns:  1fr 1fr;
+      margin-top: 1rem;
+    }
+
+    &__box {
+      text-align: center;
+      padding: 1rem 6rem;
+
+      @media (max-width: 500px) {
+        padding: 1rem 1rem;
+      }
+
+      img {
+        height: auto;
+        width: 90px;
+      }
+
+
+      p {
+        font-size: $p-size;
+        font-family: $text-font;
+        color: #fff;
+        line-height: 1.43;
+      }
+    }
+  }
+}

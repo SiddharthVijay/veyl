@@ -1,0 +1,67 @@
+@use "../global" as *;
+
+.product-section {
+  background-color: $bg-white;
+  padding: 4rem 0rem;
+
+  .product-sec{
+    padding: 0 2.5rem;
+  }
+
+  h4{
+    color: #f48090;
+    font-weight: 400;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+  }
+
+  h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: #333181;
+  }
+  
+}
+
+.prod_box{
+  margin-right:20px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  background: #fff;
+  
+  img{
+    width: 100%;
+  }
+  .tagd{
+    margin-top: 5px;
+
+    span{
+      background: #f48090;
+      padding: 0.2rem 0.8rem;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.1rem;
+    }
+  }
+
+  .head{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+  }
+  .desc{
+    margin-top: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+@use "../global" as *;
+
+// modal & overlay
+
+.active-modal {
+  opacity: 1 !important;
+  display: flex !important;
+}
+
+.modal-overlay {
+  opacity: 0;
+  display: none;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 999999999;
+  top: 0;
+  right: 0;
+}
+
+.mod-modal {
+  opacity: 0;
+  display: none;
+
+  flex-direction: column;
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 999999999999;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55rem;
+  height: 100vh;
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255);
+  padding-right: 2px;
+  color: $text-black;
+
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+
+  @media (max-width: 600px) {
+    top: 50%;
+  }
+
+  &__title {
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    background-color: white;
+    color: white;
+    align-items: center;
+
+  
+    i {
+      font-size: 2.5rem;
+      color: rgba(0, 0, 0, 0.919);
+      cursor: pointer;
+      transition: all 0.2;
+      float: right;
+      &:hover {
+        color: rgb(0, 0, 0);
+      }
+    }
+  }
+
+  &__message {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+    padding: 0 5rem;
+     background-color: white;
+
+    
+  }
+}

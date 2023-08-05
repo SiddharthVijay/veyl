@@ -1,0 +1,146 @@
+@use "../global" as *;
+
+.hero-section {
+  margin-top: 100px;
+}
+
+
+
+.hero-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  @media (max-width: 800px) {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    z-index: 3;
+    padding: 0 10rem;
+    align-items: center;
+    margin-top: 1rem;
+
+
+    @media (max-width: 800px) {
+      text-align: center;
+      align-items: center;
+      margin-top: 3rem;
+      padding: 0 3rem;
+
+    }
+
+    @media (max-width: 450px) {
+      text-align: center;
+      align-items: center;
+      margin-top: 3rem;
+
+    }
+
+
+    
+    h2 {
+      font-size: $h2-size;
+      font-family: $text-font;
+      color: #1e1a61;
+      text-align: center;
+      @media (max-width: 450px) {
+        font-size: 2.5rem;
+  
+      }
+  
+     
+      
+    }
+
+
+    p {
+      font-size: $p-size;
+      font-family: $text-font;
+      line-height: 1.6;
+      color: black;
+      margin: 3rem 0;
+      text-align: center;
+    }
+
+    &__btns {
+      display: flex;
+      gap: 2rem;
+      font-size: $p-size;
+      font-family: $text-font;
+      width: 80%;
+
+      @media (max-width: 450px) {
+        flex-direction: column;
+        width: 100%;
+
+      }
+
+      a {
+        background-color: #3d37a6;
+        color: #ffffff;
+        padding: 1.2rem 4rem;
+        border-radius: 50px;
+        transition: all 0.3s;
+        text-decoration: none;
+        text-align: center;width: 100%;
+      }
+
+      
+    }
+  }
+
+
+
+  &_img {
+    flex: 1 0 50%;
+    vertical-align: middle;
+    text-align: center;
+    background: #f7f7f7;
+
+
+    img {
+      max-width: 600px;
+            width: 100%;
+
+      @media (max-width: 800px) {
+        max-width: 600px;
+
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+
+
+// Scroll Bar styles
+.scroll-up {
+  position: fixed;
+  font-size: 2.5rem;
+  color: white;
+  background-color: $text-primary;
+  border: 3px solid white;
+  width: 2rem;
+  height: 2rem;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 20;
+  display: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 2rem;
+  cursor: pointer;
+  border-radius: 10px;
+
+}
+
+.show-scroll {
+  display: flex;
+}
