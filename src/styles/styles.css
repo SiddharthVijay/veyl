@@ -748,34 +748,34 @@ nav .navbar__buttons__buy:hover {
   display: table;
 }
 .purchase-section .container .purchase-text .radio-toolbar-flavor label {
-  background-color: #ffffff;
-  width: 14rem;
-  margin: 0 1rem 0 0;
-  font-size: 16px;
-  font-weight: 600;
+  grid-gap: 2rem;
+  background-color: #fff;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 1rem;
   display: grid;
-  grid-template-columns: 1em auto;
-  gap: 2rem;
   float: left;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 0rem;
+  grid-template-columns: 3.2em auto;
+  margin: 0 1rem 1rem 0;
+  width: 41%;
 }
 .purchase-section .container .purchase-text .radio-toolbar-flavor label input[type=radio] {
   -moz-appearance: none;
        appearance: none;
-  /* Safari support */
   -webkit-appearance: none;
   border: 0.2rem solid #fff;
   border-radius: 50%;
   width: 4.9rem;
+  height: 4.9rem;
 }
 .purchase-section .container .purchase-text .radio-toolbar-flavor label input[type=radio]:checked {
   box-shadow: 0 0 0 1px #1e1a61;
   border-width: 0.4rem;
 }
 .purchase-section .container .purchase-text .radio-toolbar-flavor label span {
-  margin-left: 2rem;
+  margin-left: 1rem;
   padding: 1.3rem 0;
   text-align: left;
 }
@@ -787,8 +787,8 @@ nav .navbar__buttons__buy:hover {
 }
 @media screen and (max-width: 1000px) {
   .purchase-section .container .purchase-text {
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: left;
     position: relative;
   }
 }
