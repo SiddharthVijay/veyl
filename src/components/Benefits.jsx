@@ -50,25 +50,25 @@ function Benefits() {
             <div className="benefits-container__boxes">
               <div className="benefits-container__boxes__box">
               
-                <img src={propweightloss} alt="icon_img" />
+                <img loading="lazy" src={propweightloss} alt="icon_img" />
                 <p>Weight-Loss Support</p>
           
               </div>
 
               <div className="benefits-container__boxes__box">
-                <img src={propskin} alt="icon_img" />
+                <img loading="lazy" src={propskin} alt="icon_img" />
                 <p>Healthier, Firmer Skin</p>
                
               </div>
 
               <div className="benefits-container__boxes__box">
-                <img src={propgut} alt="icon_img" />
+                <img loading="lazy" src={propgut} alt="icon_img" />
                 <p>Better Gut-Health</p>
              
               </div>
 
               <div className="benefits-container__boxes__box">
-                <img src={propjoint} alt="icon_img" />
+                <img loading="lazy" src={propjoint} alt="icon_img" />
                 <p>Stronger Bones</p>
      
               </div>
@@ -89,7 +89,7 @@ function Benefits() {
 
         {/* message */}
         <div className="mod-modal__message">
-            <img src={nutrilabel} alt="nutri-label"></img>
+            <img loading="lazy" src={nutrilabel} alt="nutri-label"></img>
         </div>
        
       </div>

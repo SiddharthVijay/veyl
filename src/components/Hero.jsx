@@ -14,6 +14,7 @@ function Hero() {
             {/* img */}
             <div className="hero-content_img">
               <img
+              loading="lazy"
                 src={HeroCar}
                 alt="Hero-img"
                 

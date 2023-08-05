@@ -37,7 +37,7 @@ function Featured() {
                 <div className="featured-container__section__boxes ">
                   {
                       featured_data.map(data => (
-                          <img    src={data.img}  alt="featured"  className=""/>
+                          <img  loading="lazy"  src={data.img}  alt="featured"  className=""/>
                       )) 
                   }
                 </div>
@@ -54,7 +54,7 @@ function Featured() {
                   <div class="finally-sec__name__profile">
                   <img class="finally-sec__name__profile-pic" src={profileimg} alt="profile-img"></img>
                   <span>
-                      <img src={signature} alt="signature"></img>
+                      <img loading="lazy" src={signature} alt="signature"></img>
                       <p>Dr. Kellyann Petrucci</p>
                   </span>
                       
@@ -63,7 +63,7 @@ function Featured() {
               </div>
 
               <div className="finally-sec-image">
-                <img src={finallyimg} alt = "about  me" />
+                <img loading="lazy" src={finallyimg} alt = "about  me" />
               </div>
             </div>
 

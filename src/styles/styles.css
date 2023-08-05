@@ -675,19 +675,20 @@ nav .navbar__buttons__buy:hover {
   /* When the radio button is checked, add a blue background */
 }
 .purchase-section .container .purchase-text .radio-toolbar-frequency label {
-  background-color: #ffffff;
-  padding: 1.4rem 2rem;
-  width: 100%;
-  margin: 0 1rem 0 0;
-  font-size: 16px;
-  font-weight: 600;
-  border: 1px solid #cccccc;
+  grid-gap: 2rem;
+  background-color: #fff;
+  border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 1rem;
   display: grid;
-  grid-template-columns: 1em auto auto;
-  gap: 2rem;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  gap: 0rem;
+  grid-template-columns: 2em auto auto;
+  margin: 0 1rem 1rem 0;
+  padding: 1.4rem 2rem;
+  width: 100%;
 }
 .purchase-section .container .purchase-text .radio-toolbar-frequency label input[type=radio] {
   -webkit-appearance: none;

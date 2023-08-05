@@ -5,6 +5,7 @@ function Banner() {
     <>
       <section className="banner-section">          
         <img
+        loading="lazy"
               src={HeroCar}
               alt="Hero-img"
               className=""

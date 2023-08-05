@@ -82,7 +82,7 @@ function Purchase() {
       <section className="purchase-section">
         <div className="container">
           <div className="purchase-image">
-            <img src={Img1} alt = "about  me" />
+            <img loading="lazy" src={Img1} alt = "about  me" />
           </div>
 
           <div className="purchase-text">
