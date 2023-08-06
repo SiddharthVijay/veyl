@@ -52,7 +52,7 @@ function Featured() {
                 
                 <div class="finally-sec__name">
                   <div class="finally-sec__name__profile">
-                  <img class="finally-sec__name__profile-pic" src={profileimg} alt="profile-img"></img>
+                  <img loading="lazy" class="finally-sec__name__profile-pic" src={profileimg} alt="profile-img"></img>
                   <span>
                       <img loading="lazy" src={signature} alt="signature"></img>
                       <p>Dr. Kellyann Petrucci</p>
