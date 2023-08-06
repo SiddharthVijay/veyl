@@ -90,7 +90,7 @@ function Product() {
                 data.map((prod) => 
                   <>
                     <div className="prod_box" >
-                    <img loading="lazy" src={prod.img} alt={prod.heading} draggable={false}></img>
+                    <img  src={prod.img} alt={prod.heading} draggable={false}></img>
                     <div class="tagd"><span className="tag">{prod.tag}</span></div>
                     <p className="head">{prod.heading}</p>
                     <p className="desc">{prod.desc}</p>
