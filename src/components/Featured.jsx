@@ -6,7 +6,7 @@ import fea5 from "../images/featured/05.png";
 import fea6 from "../images/featured/06.png";
 
 
-import finallyimg from "../images/bg-image/finallyimg.png";
+import finallyimg from "../images/bg-image/finallyimg.jpg";
 import profileimg from "../images/bg-image/profile.png";
 import signature from "../images/bg-image/signature.png";
 

@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import HeroCar from "../images/bg-image/productimage1.png";
+import HeroCar from "../images/bg-image/productimage1.jpg";
 
 function Hero() {
 
-
+  const buyBtn = () => {
+    document.querySelector("#purchase-section").scrollIntoView({ behavior: "smooth" , block  : 'center'});
+  };
+  
   return (
     <>
       <section id="home" className="hero-section">
@@ -37,6 +40,7 @@ function Hero() {
                 <Link
                   className="hero-content__text__btns_buynow"
                   to="#"
+                  onClick={buyBtn} 
                 >
                   BUY NOW
                 </Link>

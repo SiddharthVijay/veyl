@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import Logo from "../images/logo/logo.png";
-import { useState } from "react";
 
 function Navbar() {
-  const [nav, setNav] = useState(false);
 
-  const openNav = () => {
-    setNav(!nav);
+
+
+  const buyBtn = () => {
+    document.querySelector("#purchase-section").scrollIntoView({ behavior: "smooth" , block  : 'center'});
   };
+
 
   return (
     <>
@@ -29,7 +30,7 @@ function Navbar() {
 
           <div className="navbar__buttons">
 
-            <Link className="navbar__buttons__buy" to="/">
+            <Link className="navbar__buttons__buy" to="/"  onClick={buyBtn} >
               BUY NOW
             </Link>
             </div>

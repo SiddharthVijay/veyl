@@ -1,5 +1,5 @@
 import { useState,useEffect } from "react";
-import Img1 from "../images/bg-image/productimage.png";
+import Img1 from "../images/bg-image/productimage.jpg";
 
 
 function Purchase() {
@@ -21,15 +21,9 @@ function Purchase() {
 
   const packagearray = [
     {id : '1',name : '1 Day', value : 'oneday'},
-    {id : '2',name : '3 Day', value : 'threeday'},
-    {id : '3',name : '5 Day', value : 'fiveday'},
+    {id : '2',name : '3 Days', value : 'threeday'},
+    {id : '3',name : '5 Days', value : 'fiveday'},
     ];
-
-  const frequencyarray = [
-    {id : '1',name : 'One Time Purchase', value : 'onetimepurchase'},
-    {id : '2',name : 'Subscription', value : 'subscription'},
-    ];
-
 
   const pricing = [
     {id : '1',package : 'oneday',frequency : 'onetimepurchase', price : 57.00},
@@ -79,7 +73,7 @@ function Purchase() {
 
   return (
     <>
-      <section className="purchase-section">
+      <section className="purchase-section" id="purchase-section">
         <div className="container">
           <div className="purchase-image">
             <img loading="lazy" src={Img1} alt = "about  me" />

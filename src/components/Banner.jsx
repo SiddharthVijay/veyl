@@ -1,4 +1,4 @@
-import HeroCar from "../images/bg-image/bg-image.png";
+import HeroCar from "../images/bg-image/bg-image.jpg";
 
 function Banner() {
   return (
